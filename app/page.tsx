@@ -72,19 +72,21 @@ export default function Home() {
           </div>
 
           {/* ESPAÇO PARA MP4 FUTURO */}
-          <div className="w-full aspect-video bg-[#12001f] border border-purple-800 rounded-2xl flex items-center justify-center text-center px-6">
-            <div>
-              <PlayCircle className="mx-auto text-purple-400 mb-3" size={48} />
-              <p className="text-purple-400 font-black uppercase">
-                Vídeo do movimento
-              </p>
-              <p className="mt-2 text-slate-400 text-sm">
-                Espaço reservado para o vídeo em MP4
-              </p>
-            </div>
+           <div className="w-full aspect-video rounded-2xl overflow-hidden border border-purple-800 bg-black">
+            <video
+              className="w-full h-full object-cover"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/video.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo.
+            </video>
           </div>
         </div>
-      </section>
+            </section>
 
       {/* QUEM SOMOS */}
       <section id="quem-somos" className="py-12 px-6 text-center bg-black">
