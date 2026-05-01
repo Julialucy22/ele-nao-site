@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageCircle, Users, Target, Send, PlayCircle } from 'lucide-react';
+import { MessageCircle, Users, Target, Send } from 'lucide-react';
 import Link from 'next/link';
 
 const whatsappLink = 'https://wa.me/556181530423';
@@ -8,7 +8,6 @@ const whatsappLink = 'https://wa.me/556181530423';
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-
       {/* MENU */}
       <header className="fixed top-0 left-0 w-full z-50 bg-black/95 border-b border-purple-800">
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
@@ -17,12 +16,12 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex gap-5 text-xs font-bold uppercase">
-  <a href="#quem-somos">Quem somos</a>
-  <a href="#objetivos">Objetivos</a>
-  <a href="#premissas">Premissas</a>
-  <Link href="/videos">Vídeos do movimento</Link>
-  <a href="#faca-parte">Faça parte</a>
-</nav>
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#premissas">Premissas</a>
+            <Link href="/videos">Vídeos do movimento</Link>
+            <a href="#faca-parte">Faça parte</a>
+          </nav>
 
           <a
             href={whatsappLink}
@@ -49,44 +48,35 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/facaparte"
+                className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase"
+              >
+                <Send size={18} />
+                Faça parte
+              </Link>
 
-  {/* BOTÃO FAÇA PARTE */}
-  <Link
-    href="/facaparte"
-    className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase"
-  >
-    <Send size={18} />
-    Faça parte
-  </Link>
-
-  {/* BOTÃO + VIDEOS */}
-  <Link
-  href="/videos"
-  className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase min-w-[160px]"
->
-  <span className="text-lg font-black"></span>
- Mais videos
-</Link>
-
-</div>
+              <Link
+                href="/videos"
+                className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase min-w-[160px]"
+              >
+                Mais vídeos
+              </Link>
+            </div>
           </div>
 
-          {/* ESPAÇO PARA MP4 FUTURO */}
-           <div className="w-full aspect-video rounded-2xl overflow-hidden border border-purple-800 bg-black">
-            <video
-              className="w-full h-full object-cover"
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src="/video.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo.
-            </video>
+          {/* VIDEO DO YOUTUBE */}
+          <div className="w-full aspect-video rounded-2xl overflow-hidden border border-purple-800 bg-black">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/IDmB5eJUX24?rel=0&modestbranding=1"
+              title="Vídeo do movimento"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
-            </section>
+      </section>
 
       {/* QUEM SOMOS */}
       <section id="quem-somos" className="py-12 px-6 text-center bg-black">
@@ -215,7 +205,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
     </main>
   );
 }
