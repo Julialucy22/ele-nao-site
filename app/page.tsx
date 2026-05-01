@@ -48,13 +48,27 @@ export default function Home() {
               Pela verdade. Pela segurança. Pelas mulheres.
             </p>
 
-            <Link
-              href="/facaparte"
-              className="mt-6 inline-flex bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-3 hover:bg-purple-600 transition-all uppercase"
-            >
-              <Send size={18} />
-              Faça parte
-            </Link>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4">
+
+  {/* BOTÃO FAÇA PARTE */}
+  <Link
+    href="/facaparte"
+    className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase"
+  >
+    <Send size={18} />
+    Faça parte
+  </Link>
+
+  {/* BOTÃO + VIDEOS */}
+  <Link
+  href="/videos"
+  className="inline-flex justify-center bg-purple-700 px-6 py-3 rounded-xl font-black items-center gap-2 hover:bg-purple-600 transition-all uppercase min-w-[160px]"
+>
+  <span className="text-lg font-black"></span>
+ Mais videos
+</Link>
+
+</div>
           </div>
 
           {/* ESPAÇO PARA MP4 FUTURO */}
