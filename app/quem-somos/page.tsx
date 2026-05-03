@@ -49,27 +49,6 @@ export default function QuemSomos() {
             No Brasil, graças às reiteradas eleições do PT, agenda progressista ganhou força. Paulatinamente, os espaços originalmente reservados às mulheres com vistas a trazer mais segurança e mais condições de ascensão profissional (como as cotas para ingresso na vida política) passaram a ser ocupados também por travestis.
           </p>
 
-          <p className="font-bold text-white">
-            O estado de coisas é extremamente grave e já podemos observar consequências nas seguintes áreas:
-          </p>
-
-          <div className="space-y-4 text-left">
-            <div>
-              <p className="font-bold text-purple-400">Segurança:</p>
-              <p>Travestis estão autorizados a utilizarem banheiros femininos.</p>
-              <p>Travestis estão autorizados a optarem por serem encaminhados a presídios femininos.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-purple-400">Esportes:</p>
-              <p>Travestis estão autorizados a disputarem com mulheres em competições desportivas.</p>
-            </div>
-
-            <div>
-              <p className="font-bold text-purple-400">Política:</p>
-              <p>Travestis são classificados como mulheres e preenchem as cotas femininas e também recebem recursos do fundo eleitoral como se fossem mulheres.</p>
-            </div>
-          </div>
         </div>
       </div>
     </main>
