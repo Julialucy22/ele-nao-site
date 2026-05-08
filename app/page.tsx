@@ -70,7 +70,7 @@ export default function Home() {
           <div className="w-full aspect-video rounded-2xl overflow-hidden border border-purple-800 bg-black">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/IDmB5eJUX24?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/ya3CWaoa_SQ"
               title="Vídeo do movimento"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
