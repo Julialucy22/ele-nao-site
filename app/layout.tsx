@@ -26,7 +26,7 @@ export const metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-     icon: "/favicon.png?v=2",
+     icon: "/favicon.png?v=3",
   },
 };
 
